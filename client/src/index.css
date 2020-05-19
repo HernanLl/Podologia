@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.mask{
+    height: calc(100vh - 60px);
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+}
+.filter{
+    z-index:0;
+    background: rgba(0,0,0,0.3);
+}
+li{
+    list-style: none;
+}
+.colorText{
+    color: #B868CF;
+}
+.colorBg{
+    background:#B868CF;
+}
+
+/*Navbar general*/
+nav{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 60px;
+    z-index:2;
+}
+.logo{
+    font-weight:bold;
+    border:2px solid white;
+}
+/*Navbar links*/
+.nav-links{
+    display:flex;
+}
+.nav-links-responsive{
+    display:none;
+    height: calc(100vh - 60px);
+    width: 100%;
+    background:white;
+    transition: transform 0.5s;
+}
+.nav-links li, .nav-links-responsive li{
+    transition: background 1s;
+}
+.nav-links li:hover, .nav-links-responsive li:hover{
+    background:rgba(184,104,207,0.5);
+}
+.nav-links .link,.nav-links-responsive .link{
+    text-decoration:'none';
+    font-weight:bold;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing:2px;
+}
+/*Navbar burger*/
+.burger{
+    display:none;
+    cursor:pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+#link1{
+    transition-delay: 0.5s;
+}
+#link2{
+    transition-delay: 0.6s;
+}
+#link3{
+    transition-delay: 15s;
+}
+
+/*Header*/
+.titleHeader{
+    font-size:5rem;
+}
+.textHeader{
+    font-size:1.3rem;
+}
+@media screen and (max-width: 768px){
+    *{
+        overflow-x: hidden;
+    }
+    .headerImage{
+        background-image: url('./assets/fondoresponsive.jpg');
+    }
+    /*Navbar*/
+    .nav-links{
+        display: none;
+    }
+    .nav-links-responsive{
+        display:flex;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top:60px;
+        height: calc(100vh - 60px);
+        transform: translateX(100%);
+    }
+    .nav-links-responsive li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .burger{
+        display: block;
+    }
+    .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .line2{
+        opacity: 0;
+    }
+    .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+    .nav-links li:hover, .nav-links-responsive li:hover{
+        background:white;
+    }
+    /*Header*/
+    .titleHeader{
+        font-size:3rem;
+    }
+    .textHeader{
+        font-size:1.2rem;
+    }
+    /*Maps*/
+    .iframe{
+        height:300px;
+    }
+}
