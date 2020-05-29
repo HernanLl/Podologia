@@ -86,6 +86,10 @@ nav{
 .textHeader{
     font-size:1.3rem;
 }
+.whatsapp-icon{
+    color:#41C452;
+}
+
 @media screen and (max-width: 768px){
     *{
         overflow-x: hidden;

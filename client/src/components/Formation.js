@@ -15,10 +15,10 @@ class Formation extends React.Component{
                 <MDBRow className="text-lg-center">
                     <MDBCol md="12">
                         <ul>
-                            <li className="list-group-item my-2" style={{border:'.5px solid #eee'}}>Técnica Podóloga. 2012 - Facultad de bioquímica y ciencias biológicas</li>
-                            <li className="list-group-item my-2" style={{border:'.5px solid #eee'}}>Terapeuta Reflexóloga. 2018 - Escuela de reflexología Alma y Cuerpo</li>
-                            <li className="list-group-item my-2" style={{border:'.5px solid #eee'}}>Reflexología Facial. 2018 - Escuela de reflexología Alma y Cuerpo</li>
-                            <li className="list-group-item my-2" style={{border:'.5px solid #eee'}}>Técnica Metamórfica. 2018 - Escuela de reflexologia Alma y Cuerpo</li>
+                            <li className="list-group-item my-2 text-center" style={{border:'.5px solid #eee'}}>Técnica Podóloga. 2012 - Facultad de bioquímica y ciencias biológicas</li>
+                            <li className="list-group-item my-2 text-center" style={{border:'.5px solid #eee'}}>Terapeuta Reflexóloga. 2018 - Escuela de reflexología Alma y Cuerpo</li>
+                            <li className="list-group-item my-2 text-center" style={{border:'.5px solid #eee'}}>Reflexología Facial. 2018 - Escuela de reflexología Alma y Cuerpo</li>
+                            <li className="list-group-item my-2 text-center" style={{border:'.5px solid #eee'}}>Técnica Metamórfica. 2018 - Escuela de reflexologia Alma y Cuerpo</li>
                         </ul>
                     </MDBCol>
                 </MDBRow>

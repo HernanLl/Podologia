@@ -12,7 +12,7 @@ class Chat extends React.Component{
     render(){
         return(
             <MDBContainer className="d-lg-none fixed-bottom justify-content-end p-4" style={this.collapse()} fluid>
-                <a target="blank" href="https://wa.me/543434570150/?text=Hola%20Sandra%2C%20necesito%20hacerte%20una%20consulta." className="text-dark">
+                <a target="blank" href="https://wa.me/543434570150/?text=Hola%20Sandra%2C%20necesito%20hacerte%20una%20consulta." className="whatsapp-icon">
                     <i className="fab fa-whatsapp" style={{fontSize:'3rem'}}></i>
                 </a>
             </MDBContainer>

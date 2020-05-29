@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const nodeMailer = require('nodemailer');
-const config = require('./config.js');
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -27,7 +26,7 @@ app.post('/send-email',function(req,res){
         service:'hotmail',
         auth: {
             user: 'podologia-sc@hotmail.com',
-            pass: config.EMAIL_PASSWORD
+            pass: process.env.EMAIL_PASSWORD
         }
     });
 
